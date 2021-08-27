@@ -4,7 +4,7 @@ _git_prompt () {
      || [[ "$(__git_prompt_git config --get oh-my-zsh.hide-info 2>/dev/null)" == 1 ]]; then
     return 0
   fi
-  echo "${ZSH_THEME_GIT_PROMPT_PREFIX} %15>~>$(current_branch)%>>$(parse_git_dirty) ${ZSH_THEME_GIT_PROMPT_SUFFIX}"
+  echo "${ZSH_THEME_GIT_PROMPT_PREFIX}%15>~>$(current_branch)%>>$(parse_git_dirty)${ZSH_THEME_GIT_PROMPT_SUFFIX}"
 }
 
 vcs_status() {
